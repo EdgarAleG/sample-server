@@ -31,7 +31,7 @@ const generateId = () => {
 }
 
 app.get("/", (request, response) => {
-  response.send("<h1>Hello World en puerto 3001 probando</h1>");
+  response.send("<h1>Hola Virginia, te amo mucho</h1>");
 });
 
 app.get("/api/notes", (resquest, response) => {
