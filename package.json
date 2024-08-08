@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build:ui": "rm -rf dist && ../frontend-notes && npm run build && cp -r dist ../sample-server",
+    "deploy:full": "npm run build:ui && git add . && git commit -am uibuild && git push -u origin main"
   },
   "author": "Edgar Gonzalez A",
   "license": "ISC",
